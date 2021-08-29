@@ -1,0 +1,50 @@
+// el-table-result 样式修改 start
+&::v-deep .el-table th {
+  background-color: #F3F5FB;
+}
+
+&::v-deep .el-table--striped .el-table__body tr.el-table__row--striped td {
+  background-color: #F6F7FB;
+}
+
+&::v-deep .el-table th {
+  font-size: 14px;
+  font-weight: 550;
+  color: #646566;
+  line-height: 22px;
+  height: 54px;
+}
+
+//&::v-deep .must > div::before {
+//  content: '* ';
+//  color: #C23F3F;
+//}
+
+&::v-deep td {
+  font-size: 14px;
+  font-family: ArialMT, serif;
+  color: #646566;;
+  line-height: 22px;
+  height: 53px;
+}
+
+&::v-deep .el-table::before {
+  height: 0;
+}
+
+// 改变hover
+&::v-deep .el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: rgb(246, 247, 251, 0.5);
+}
+
+// 禁止hover
+//&::v-deep .el-table-result tr {
+//  pointer-events: none;
+//}
+
+// el-table-result 样式修改 end
+
+.pager {
+  margin-top: 10px;
+  float: right;
+}

@@ -1,0 +1,62 @@
+.up-dialog {
+  .head {
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 20px;
+    .head-img{
+      margin-left: 25px;
+    }
+    .head-words {
+      width: 121px;
+      height: 28px;
+      font-size: 20px;
+      font-weight: 500;
+      color: #00153E;
+      line-height: 28px;
+      padding-left: 5px;
+    }
+  }
+
+  .words {
+    width: 310px;
+    height: 50px;
+    margin-left: 64px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #556077;
+    line-height: 20px;
+  }
+  &::v-deep .el-dialog__body{
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  &::v-deep .el-dialog--center {
+    width: 486px;
+    height: 290px;
+    margin-top: calc(50vh - 145px);
+  }
+
+  &::v-deep .cancel {
+    width: 130px;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid #CDCDCD;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4D4D4D;
+    box-shadow: 0 0 10px 0 rgba(153, 153, 153, 0.3);
+  }
+
+  &::v-deep .confirm {
+    width: 130px;
+    height: 32px;
+    background: #166BD6;
+    box-shadow: 0 0 10px 0 rgba(0, 75, 169, 0.3);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-left: 50px;
+  }
+}

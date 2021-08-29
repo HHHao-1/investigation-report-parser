@@ -1,0 +1,166 @@
+.result {
+  width: 100%;
+
+  .line-1 {
+    position: absolute;
+    margin-top: 40px;
+    left: calc(92% - 470px);
+
+    .top-button {
+      width: 150px;
+      height: 40px;
+      box-shadow: 0 0 10px 0 rgba(0, 75, 169, 0.3);
+      border-radius: 4px;
+      border: 1px solid #166BD6;
+    }
+
+    .button-1, .button-2 {
+      background-color: rgba(255, 255, 255, 0);
+      font-size: 14px;
+      font-weight: 400;
+      color: #166BD6;
+    }
+
+    .button-3 {
+      background: #166BD6;
+      font-size: 14px;
+      font-weight: 400;
+      color: #FFFFFF;
+    }
+
+    .button-1-e {
+      // 这两个可以使元素隐藏，但占位置；display:none是隐藏不占位置
+      //opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  .line-2 {
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    height: 50px;
+    background: #FFFFFF;
+    margin-top: 96px;
+
+    .name-list {
+      display: -webkit-inline-flex; /* Safari */
+      display: inline-flex;
+      // flex: none;和flex-shrink:0;可解决文字垂直不能水平的问题
+      // flex-shrink: 0;
+      flex: none;
+
+      .name {
+        margin: 16px 29.5px 0 29.5px;
+        padding-bottom: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #323333;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .click {
+        border-bottom: 2px solid #1258B1 !important;
+        color: #1258B1;
+      }
+
+    }
+  }
+
+  .line-3 {
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    height: 66px;
+    background: #FFFFFF;
+    margin-top: 159px;
+
+    .field-list {
+      display: -webkit-inline-flex; /* Safari */
+      display: inline-flex;
+
+      .field {
+        margin: 14px 15px 14px 40px;
+        padding: 8px;
+        //transform: translate(38px, 15px);
+        font-size: 14px;
+        font-weight: 400;
+        color: #323333;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .click {
+        background-color: #EBF4FF;
+        color: #1258B1;
+      }
+    }
+  }
+
+  .line-4 {
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    //height: 593px;
+    height: calc(100vh - 331px - 30px);
+    background: #FFFFFF;
+    margin-top: 241px;
+
+    .table {
+      padding: 30px 40px 0 40px;
+    }
+  }
+
+  .line-5 {
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    //width: 1240px;
+    height: 158px;
+    background: #FFFFFF;
+    margin-top: 241px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #646566;
+    line-height: 20px;
+
+    .user-header {
+      margin: 26px 0 22px 40px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #323333;
+      line-height: 16px;
+    }
+  }
+
+  .line-6 {
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    height: calc(100vh - 505px - 30px);
+    background: #FFFFFF;
+    margin-top: 415px;
+
+    .login-header {
+      margin: 26px 0 0 40px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #323333;
+      line-height: 16px;
+    }
+
+    .login-info-table {
+      padding: 16px 40px 85px 40px;
+    }
+  }
+
+
+  &::v-deep .el-scrollbar__wrap {
+    overflow-y: hidden;
+  }
+}

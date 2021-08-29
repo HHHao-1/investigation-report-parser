@@ -1,0 +1,35 @@
+.title-bar {
+  margin: 47px 8% 20px 8%;
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    width: 260px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333333;
+
+    img {
+      margin-top: 4px;
+      margin-right: 18px;
+    }
+  }
+
+  .right {
+    .right-button {
+      width: 150px;
+      height: 40px;
+      box-shadow: 0 0 10px 0 rgba(0, 75, 169, 0.3);
+      border-radius: 4px;
+      border: 1px solid #166BD6;
+      background-color: rgba(255, 255, 255, 0);
+      font-size: 14px;
+      font-weight: 400;
+      color: #166BD6;
+    }
+  }
+
+}

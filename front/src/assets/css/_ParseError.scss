@@ -1,0 +1,53 @@
+.error {
+  position: relative;
+  height: calc(100vh - 90px);
+
+  .center {
+    position: absolute;
+    Left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 418px;
+    height: 439px;
+
+    .error-img {
+      margin-left: 59px;
+      width: 300px;
+      height: 335px;
+      margin-bottom: 25px;
+    }
+
+    .font-sorry {
+      width: 154px;
+      height: 33px;
+      font-size: 24px;
+      font-weight: 400;
+      color: #00153E;
+      line-height: 33px;
+      display: inline;
+      margin-left: 79px;
+
+    }
+
+    .font-tip {
+      width: 418px;
+      height: 22px;
+      font-size: 16px;
+      font-weight: 400;
+      color: #00153E;
+      line-height: 22px;
+
+      .reUpload {
+        color: #2377E3;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:active {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@mixin table-base {
+  margin: 0 8% 0 8%;
+
+  &::v-deep td:first-child .cell {
+    margin-left: 10px;
+  }
+
+  &::v-deep th:first-child .cell {
+    margin-left: 10px;
+  }
+
+  &::v-deep td:last-child .cell {
+    padding-right: 30px;
+  }
+
+  &::v-deep td:last-child .cell {
+    padding-right: 30px;
+  }
+
+  &::v-deep .el-table__empty-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #7D7E80;
+    line-height: 20px;
+    margin-bottom: 36px;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #323333;
+    line-height: 16px;
+    margin: 0 0 20px 0;
+    padding: 26px 0 0 0;
+  }
+
+  .no-data {
+    margin: 36px 0 14px 0;
+  }
+}

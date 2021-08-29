@@ -1,0 +1,265 @@
+$left: 50%;
+$top: 25%;
+$transform: translate(-50%, -50%);
+@mixin exchange-logo($url:none) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  transform: translate(-50%, 0);
+  margin-top: -20px;
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-image: $url;
+  &:focus {
+    outline: none;
+  }
+}
+
+.upload {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+
+  .center {
+    position: relative;
+    height: 100%;
+
+    .logo-img {
+      position: absolute;
+      left: $left;
+      top: $top;
+      transform: $transform;
+    }
+
+    .logo-words {
+      position: absolute;
+      left: $left;
+      top: $top;
+      transform: $transform;
+      width: 250px;
+      height: 26px;
+      font-size: 24px;
+      font-weight: 500;
+      color: #666666;
+      line-height: 26px;
+      margin-top: 50px;
+      margin-bottom: 0;
+      margin-left: 93px;
+    }
+
+    .icon {
+      position: absolute;
+      left: $left;
+      top: $top;
+      margin-top: 174px;
+      line-height: 16px;
+      margin-left: -480px;
+    }
+
+    .i-words {
+      position: absolute;
+      left: $left;
+      top: $top;
+      margin-top: 174px;
+      width: 240px;
+      height: 22px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #D85F5F;
+      line-height: 17px;
+      margin-left: -455px;
+    }
+
+
+    .box {
+      width: 300px;
+      height: 180px;
+      border-radius: 10px;
+      border: 1px solid #DEE0E6;
+      position: absolute;
+      left: $left;
+      top: $top;
+      transform: translate(-50%, 0);
+      margin-top: 210px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    //.b-1 {
+    //  margin-left: -330px;
+    //
+    //  .b1-logo {
+    //    @include exchange-logo(url('../assets/img/bian.png'));
+    //  }
+    //}
+    //
+    //.b-2 {
+    //  .b2-logo {
+    //    @include exchange-logo(url('../assets/img/huobi.png'));
+    //  }
+    //
+    //  //div使用:focus-within，标签要加上这个属性tabindex="0"
+    //  //&:focus-within {
+    //  //  background-image: url("../assets/img/background.png");
+    //  //  border: 0;
+    //  //
+    //  //  .b2-logo {
+    //  //    background-image: url("../assets/img/huobi-white.png");
+    //  //  }
+    //  //
+    //  //  .exchange-words {
+    //  //    color: #E3EFFF;
+    //  //  }
+    //  //}
+    //}
+    //
+    //.b-3 {
+    //  margin-left: 330px;
+    //
+    //  .exchange-words {
+    //    width: 105px !important;
+    //  }
+    //
+    //  .b3-logo {
+    //    @include exchange-logo(url('../assets/img/okex.png'));
+    //  }
+    //}
+
+    .exchange-words {
+      @include exchange-logo;
+      margin-top: 82px;
+      width: 90px;
+      height: 25px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #646666;
+      line-height: 25px;
+    }
+
+    .file {
+      position: absolute;
+      left: $left;
+      top: $top;
+      transform: translate(-50%, 0);
+      margin-top: 430px;
+
+      &::v-deep .el-upload-dragger {
+        width: 960px;
+        height: 228px;
+
+        .button-up {
+          margin-top: 40px;
+          width: 150px;
+          height: 40px;
+          background: #1F76E3;
+          box-shadow: 0px 0px 10px 0px rgba(31, 118, 227, 0.2);
+          border-radius: 4px;
+        }
+
+        .el-upload__text {
+          font-size: 14px;
+          font-weight: 400;
+          color: #323333;
+          line-height: 18px;
+        }
+
+        .icon-up {
+          margin-top: 44px;
+          margin-bottom: 15px;
+        }
+      }
+
+      .icon2 {
+        margin-left: 384px
+      }
+
+      .i-words2 {
+        position: absolute;
+        width: 170px;
+        height: 16px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #d85f5f;
+        line-height: 15px;
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+//.b-1-click {
+//  margin-left: -330px;
+//  background-image: url("../assets/img/background.png");
+//  border: 0;
+//
+//  .b1-logo {
+//    @include exchange-logo(url('../assets/img/bian-white.png'));
+//  }
+//
+//  .exchange-words {
+//    color: #E3EFFF;
+//  }
+//}
+//
+//.b-2-click {
+//  background-image: url("../assets/img/background.png");
+//  border: 0;
+//
+//  .b2-logo {
+//    @include exchange-logo(url('../assets/img/huobi-white.png'));
+//  }
+//
+//  .exchange-words {
+//    color: #E3EFFF;
+//  }
+//}
+//
+//.b-3-click {
+//  background-image: url("../assets/img/background.png");
+//  border: 0;
+//  margin-left: 330px;
+//
+//  .exchange-words {
+//    width: 105px !important;
+//    color: #E3EFFF;
+//  }
+//
+//  .b3-logo {
+//    @include exchange-logo(url('../assets/img/okex-white.png'));
+//  }
+//}
+
+.move-up {
+  @extend .upload;
+
+  .logo-img {
+    margin-top: -100px !important;
+  }
+
+  .logo-words {
+    margin-top: -50px !important;
+  }
+
+  .icon, {
+    margin-top: 34px !important;;
+  }
+
+  .i-words {
+    margin-top: 34px !important;
+  }
+
+  .box {
+    margin-top: 70px !important;
+  }
+
+  .file {
+    margin-top: 290px !important;
+  }
+}
